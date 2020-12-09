@@ -26,11 +26,9 @@
     flex-grow: 8;
 }
 
-.topo .logo{
-    margin: 5px;
-    padding: 0;
-    color: black;
-    font-size: 1.5em;
+.topo img{
+    margin: 10px;
+    width: 75px;
 }
 
 .flex {
@@ -96,7 +94,7 @@ p{
 }
 
 .about-card img{
-    width: 20%;
+    width: 70%;
     padding: 20px;
 }
 
@@ -125,6 +123,8 @@ p{
     border-radius: 25px;
     width: 300px;
     height: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -152,7 +152,7 @@ p{
     right: 0;
     bottom: 0;
     left: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Texturina', serif;
     background: rgba(0,0,0,0.8);
     z-index: 99999;
     opacity:0;
@@ -160,7 +160,13 @@ p{
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    text-align: center;
 }
+
+.modal p {
+    color: #000000;
+}
+
 
 .modal:target {
     opacity: 1;
