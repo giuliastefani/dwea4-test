@@ -7,7 +7,15 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/style-mobile-first.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
     </head>
+
+    <script>
+        function alertFunction() {
+          alert("Sucesso!");
+        }
+    </script>
+
     <body>
         <header class="topo flex">
             <img src="img/logo.png"></img>
@@ -113,24 +121,25 @@
                     <a href="#fechar" title="Fechar" class="fechar">x</a>
                     <form action="/">
                         <div class="info">
-                          <input class="fname" type="text" name="name" placeholder="Full name">
-                          <input type="text" name="name" placeholder="Email">
-                          <input type="text" name="name" placeholder="Phone number">
-                          <input type="text" name="name" placeholder="Adress">
+                            <p>Preencha as informações abaixo para completar a compra</p>
+                            <input class="fname" type="text" name="name" placeholder="Nome Completo">
+                            <input type="text" name="name" placeholder="Email">
+                            <input type="text" name="name" placeholder="Número de telefone">
+                            <input type="text" name="name" placeholder="Endereço">
                         </div>
-                        <h3>Delivery Method</h3>
-                        <div class="metod">
+                        <h3>Método de entrega</h3>
+                        <div class="method">
                           <div> 
-                            <input type="radio" value="none" id="radioOne" name="metod" checked/>
-                            <label for="radioOne" class="radio">For pick up</label>
-                          </div>
-                          <div>
-                            <input type="radio" value="none" id="radioTwo" name="metod" />
-                            <label for="radioTwo" class="radio">For delivery</label>
-                          </div>
+                            <input type="radio" value="none" id="radioOne" name="method" checked/>
+                            <label for="radioOne" class="radio">Retirada</label>
                         </div>
-                        <button href="/" class="button">Submit</button>
-                </form>
+                        <div>
+                            <input type="radio" value="none" id="radioTwo" name="method" />
+                            <label for="radioTwo" class="radio">Entrega</label>
+                        </div>
+                        </div>
+                        <button onclick="alertFunction()" class="button">Comprar</button>
+                    </form>
                 </div>
             </div>
         </section>

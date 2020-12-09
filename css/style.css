@@ -152,7 +152,7 @@ p{
     right: 0;
     bottom: 0;
     left: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Texturina', serif;
     background: rgba(0,0,0,0.8);
     z-index: 99999;
     opacity:0;
@@ -160,7 +160,13 @@ p{
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    text-align: center;
 }
+
+.modal p {
+    color: #000000;
+}
+
 
 .modal:target {
     opacity: 1;
