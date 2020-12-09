@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Poções e Soluções</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style-mobile-first.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header class="topo flex">
+            <img src="img/logo.png"></img>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produto">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <img src="img/banner.jpg"></img>
+        </div>
+        <section id="sobre">
+            <div class="card about-card">
+                <h1>Sobre</h1>
+                <div class="about-card-content">
+                    <div>
+                        <p>Poções e Soluções é uma loja de poções inaugurada em 1867. Sua fundadora Annabelle Merigold foi uma
+                            exímia aluna da Castelobruxo, a maior escola de Magia e Bruxaria da América do Sul, durante seu
+                            tempo de estudos também realizou um intercâmbio na Academia de Magia de Beauxbatons.
+                            A loja possui atualmente seis tipos de poções, por um preço acessível. Acesse a seção de produtos
+                            e encontre a poção ideal para seu problema!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/witchhut2.png"></img>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produto">
+            <div class="card product-card">
+                <h1>Produtos</h1>
+                <div>
+                    <div class="product-card-2">
+                        <div class="one-product-card">
+                            <img src="img/img1.png"></img>
+                            <p>Polyjuice Potion</p>
+                            <h2>A Poção Polissuco permite ao bebedor assumir a aparência de outra pessoa por uma
+                                hora ou mais dependendo da quantidade. A poção causa apenas uma transformação
+                                física e vocal do bebedor, mas a roupa não é afetada.
+                            </h2>
+                            <h3>Preço: R$ 25,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                        <div class="one-product-card">
+                            <img src="img/img2.png"></img>
+                            <p>Amortentia</p>
+                            <h2>Amortentia é uma poção do amor que não cria o amor real, mas dá ao bebedor uma
+                                poderosa obsessão e paixão pelo doador da poção. Geralmente é imposto a alguém
+                                ou secretamente dado.
+                            </h2>
+                            <h3>Preço: R$ 80,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                        <div class="one-product-card">
+                            <img src="img/img3.png"></img>
+                            <p>Draught of Living Death</p>
+                            <h2>Quando uma pessoa bebe a Poção da Morte em Viva, ela cai em um sono profundo tão
+                                forte que parece estar morta, daí o nome.
+                            </h2>
+                            <h3>Preço: R$ 40,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                        <div class="one-product-card">
+                            <img src="img/img4.png"></img>
+                            <p>Pepperup Potion</p>
+                            <h2>A Poção Pepperup é projetada para melhorar a saúde, aliviar tosses e resfriados,
+                                embora tenha um efeito colateral importante: faz com que o vapor goteje dos
+                                ouvidos do paciente por várias horas depois. Também é usado para elevar
+                                rapidamente a temperatura corporal.
+                            </h2>
+                                <h3>Preço: R$ 10,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                        <div class="one-product-card">
+                            <img src="img/img5.png"></img>
+                            <p>Felix Felicis</p>
+                            <h2> Felix Felicis, mais conhecido como Liquid Luck, concede a quem bebe uma boa
+                                sorte incomum. O intervalo de tempo dessa sorte depende da quantidade embebida.
+                            </h2>
+                            <h3>Preço: R$ 200,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                        <div class="one-product-card">
+                            <img src="img/img6.png"></img>
+                            <p>Veritaserum</p>
+                            <h2>Veritaserum é uma poção da verdade muito poderosa. O nome "Veritaserum"
+                                deriva da palavra latina Veritas, que significa verdade. Três gotas desta
+                                poção são tudo o que é necessário para forçar alguém a responder a qualquer
+                                pergunta com a verdade.
+                            </h2>
+                            <h3>Preço: R$ 450,00</h3>
+                            <a href="#abrirModal">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="abrirModal" class="modal">
+                <div>
+                    <a href="#fechar" title="Fechar" class="fechar">x</a>
+                    <form action="/">
+                        <div class="info">
+                          <input class="fname" type="text" name="name" placeholder="Full name">
+                          <input type="text" name="name" placeholder="Email">
+                          <input type="text" name="name" placeholder="Phone number">
+                          <input type="text" name="name" placeholder="Adress">
+                        </div>
+                        <h3>Delivery Method</h3>
+                        <div class="metod">
+                          <div> 
+                            <input type="radio" value="none" id="radioOne" name="metod" checked/>
+                            <label for="radioOne" class="radio">For pick up</label>
+                          </div>
+                          <div>
+                            <input type="radio" value="none" id="radioTwo" name="metod" />
+                            <label for="radioTwo" class="radio">For delivery</label>
+                          </div>
+                        </div>
+                        <button href="/" class="button">Submit</button>
+                </form>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <footer>
+                <div class="card contact">
+                    <div>
+                        <h1>Contato</h1>
+                        <p>Beco Vertical<br>
+                        Londres WC2N 5DU, ENG<br>
+                        Tel. +44 028 2541 1487<br>
+                        pocoesesolucoes@mail.com</p>
+                    </div>
+                </div>
+            </footer>
+        </section> 
+    </body>
+</html>

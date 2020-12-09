@@ -1,0 +1,241 @@
+.topo {
+    background-color: #323232;
+}
+
+.topo a {
+    font-family: 'Texturina', serif;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.3em;
+}
+
+.topo ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topo li a {
+    padding: 1vw;
+}
+
+.topo nav {
+    margin-left: 0px;
+    margin-right: 5px;
+    flex-grow: 8;
+}
+
+.topo .logo{
+    margin: 5px;
+    padding: 0;
+    color: black;
+    font-size: 1.5em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner img{
+    width: 100%;
+}
+
+body{
+    background-color: #4d4646;
+}
+
+h1{
+    font-family: 'Texturina', serif;
+    color:white;
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Texturina', serif;
+    color:white;
+    font-weight: normal;
+    font-size: smaller;
+    text-align: justify;
+    padding: 10px;
+}
+
+h3{
+    font-family: 'Texturina', serif;
+    color:white;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+p{
+    font-family: 'Texturina', serif;
+    color: white;
+    font-size: 22px;
+}
+
+.card {
+    text-align: justify;
+    padding: 2vw;
+    border-radius: 5px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 4vw;
+}
+
+.about-card {
+    border: 1px solid #5b5656;
+    background-color: #5b5656;
+}
+
+.about-card-content {
+    display: flex;
+    
+}
+
+.about-card img{
+    width: 20%;
+    padding: 20px;
+}
+
+.product-card {
+    text-align: unset;
+    display: inline-flex;
+    border: 1px solid #5b5656;
+    background-color: #5b5656;
+    flex-wrap: wrap;
+}
+
+.product-card-2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.one-product-card {
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #000000;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    width: 300px;
+    height: 450px;
+}
+
+
+.product-card img {
+    max-height: 200px;
+    max-width: 30%;
+    border-radius: 5px;
+    padding: 4vw;
+}
+
+.contact {
+    border: 1px solid #5b5656;
+    background-color: #5b5656;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact div{
+    padding: 3vw;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+/* MediaQueries */
+
+@media (max-width: 425px) {
+    .topo ul {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .topo a {
+        font-size: 0.8em;
+    }
+
+    .topo .logo{
+        font-size: 1em;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    p{
+        font-size: 3vw;
+    }
+
+    h1{
+        margin: 0px;
+    }
+
+    .card {
+        padding: 2vw;
+    }
+
+    .about-card-content{
+        display: grid;
+        align-items: center;
+    }
+
+    .product-card{
+        display: grid;
+        align-items: center;
+    }
+
+    .product-card img{
+        max-width: 70%;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+}
